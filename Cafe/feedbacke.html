@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="styles/sourses/icon.png">
+    <title>Feedback page</title>
+</head>
+<body id="form">
+   <header class="form-header">
+      <div class="container">
+         <img src="styles/sourses/logo.png" alt="logo">
+         <nav class="navbar">
+             <a class ="navitem" href="index.html">Home</a>
+             <a class ="navitem" href="menu.html">Menu</a>
+             <a class ="navitem" href="feedbacke.html" target="_blank">Feedback</a>
+             <a class ="navitem" href="#footer-part">Contuct Us</a> 
+         </nav>
+     </div>
+   </header>
+   <main class="main-feedback">
+      <form class="form-fields" action="#">
+         <h1 class="form-title">Send feedback for us</h1>
+         <label for="date">Enter current date:</label>
+         <input id="date" type="datetime-local" value="2023-03-12T19:30"  placeholder="Enter date" required>
+         <label for="email">Enter your email:</label>
+         <input type="email" id="email" placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+         <label for="tel">Enter your phone number:</label>
+         <input type="tel" id="phone" placeholder="Your phone number" required>
+         <label for="url">Enter your lovely product:</label>
+         <input type="url" id="url" placeholder="https://yourFavCoffee.com" size="30" required>
+         <button class="button-send" type="submit">Send your message</button>
+      </form>
+   </main>
+   <footer class="form-footer">
+      <table class="footer-table">
+         <tr>
+            <td>Your location:</td>
+            <td>Lorem ipsum dolor sit amet consectetur.</td>
+         </tr>
+         <tr>
+            <td>Your phone number:</td>
+            <td>+3805692395555</td>
+         </tr>
+      </table>
+   </footer>
+</body>
+</html>
